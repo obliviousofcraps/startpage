@@ -14,10 +14,10 @@
     		font-family: 'Product Sans', sans-serif;
     	}
 
-    	a{
+    	/*a{
     		text-decoration: none;
     		color: #eff;
-    	}
+    	}*/
 
     	.main{
     		min-width: 100vw;
@@ -29,67 +29,44 @@
 
     	.container{
     		height: 450px;
-    		width: 475px;
+    		width: 600px;
     		display: flex;
     		align-items: center;
-    		justify-content: center;
+    		justify-content: space-around;
     		background-color: #ff9595;
     		border-radius: 4px;
-    	}
-
-    	.image{
-    		transition: all 400ms ease-in-out;
-    	}
-
-    	.image:hover{
-    		box-shadow: 5px 5px 5px 5px rgba(228, 86, 100, 0.3);
-    		transform: translateX(-2px);
-    		transform: translateY(-6px);
+    		/*background: url(imgs/hanging-light.svg) no-repeat, url(imgs/plant-3.svg) no-repeat;
+    		background-size: (50% 50%);*/
     	}
 
     	.image img{
     		width: 170px;
     		border-radius: 2px;
-    		/*box-shadow: 0 0 4px 6px #303836;*/
-    	}
-
-    	.sites ul{
-    		list-style: none;
-    	}
-
-    	.site a{
-    		opacity: 1;
-    		position: relative;
-    	}
-
-
-    	.site a::after{
-    		content: '';
-		    display: block;
-		    height: 5px;
-		    background: black;
-		    position: absolute;
-		    bottom: .75em;
-		    left: 0;
-		    right: 0;
-		    transform: scale(0, 1);
-		    transition: transform ease-in-out 250ms;
-    	}
-
-    	.site a:hover::after{
-    		transform: scale(1,1);
+    		margin-right: 30px;
     	}
 
     	.sites{
     		display: flex;
     		justify-content: center;	
     		margin-top: 20px;
-    		margin-right: 20px;
     		line-height: 2em;
     	}
 
+    	.part ul {
+    		list-style: none;
+    	}
+
+    	
+
+    	a {
+    		text-decoration: none;
+    		color: #eff;
+    	}
+
+
+
     	.part{
-    		margin-right: 40px;
+    		margin-right: 25px;
     	}
 
     	.all{
@@ -107,62 +84,64 @@
     		outline: none;
     		padding-left: 10px;
     		transition: all 0.4s ease-in-out;
-    		color: #f0f0f0;
+    		color: #6a6a6a;
     		font-size: 16px;
     		font-family: 'Product Sans', sans-serif;
     	}
-
-    	input:hover{
-    		transform: scale(1.02);
-    	}
-
-    	.head{
-    		color: #32e0c4;
-    	}
-
     </style>
   </head>
   <body>
   	<div class="main">
   		<div class="container">
-  		<div class="image">
-  			<img src="imgs/girl1.jpg">
-  		</div>
-  		<div class="all">
-  		<div class="search-box">
-  			<form>
-  				<input type="text" id="search">
-  			</form>
-  		</div>
-  		<div class="sites">
-  			<div class="part">
-  			<p class="head">work</p>
-  			<ul>
-  			<li><a href="https://github.com/obliviousofcraps">github</a></li>
-  			<li><a href="https://mail.google.com/mail/u/0/#inbox">mail</a></li>
-  			</ul>
-  			</div>
-  			<div class="part">
-  			<p class="head" style="color: #363636;">social</p>
-  			<ul>
-  				<li><a href="https://www.instagram.com/">instagram</a></li>
-  				<li><a href="https://www.pinterest.com/">pinterest</a></li>
-  				<li><a href="https://www.reddit.com/">reddit</a></li>
-  				<li><a href="https://www.twitter.com/">twitter</a></li>
-  			</ul>
-  		</div>
-  		<div class="part">
-  			<p class="head" style="color: #fa744f;">other</p>
-  			<ul>
-  				<li><a href="https://www.unsplash.com">unsplash</a></li>
-  				<li><a href="https://reddit.com/r/unixporn">unix</a></li>
-  				<li><a href="https://reddit.com/r/learnprogramming">learnprograming</a></li>
-  				<li><a href="https://youtube.com">youtube</a></li>
-  				<li><a href="https://codepen.io/dashboard/">codepen</a></li>
-  			</ul>
+	  		<div class="image">
+	  			<img src="imgs/girl1.jpg">
+	  		</div>
+	  		<div class="all">
+		  		<div class="search-box">
+		  			<form>
+		  				<input type="text" id="search">
+		  			</form>
+		  		</div>
+		  		<div class="sites">
+		  			<div class="part">
+			  			<p class="head" style="color: #07ff7b;">work</p>
+			  			<ul>
+			  			<li><a href="https://github.com/obliviousofcraps">github</a></li>
+			  			<li><a href="https://mail.google.com/mail/u/0/#inbox">mail</a></li>
+			  			</ul>
+		  			</div>
+		  			<div class="part">
+			  			<p class="head" style="color: #363636;">study</p>
+			  			<ul>
+			  				<li><a href="https://www.coursera.org">coursera</a></li>
+			  				<li><a href="https://courses.edx.org/dashboard">edx</a></li>
+			  				<li><a href="https://hyperskill.org/curriculum">jetbrains</a></li>
+			  				<li><a href="https://www.freecodecamp.org">freecodecamp</a></li>
+			  				<li><a href="https://theodinproject.com/dashboard">theodinproject</a></li>
+			  			</ul>
+		  			</div>
+		  			<div class="part">
+			  			<p class="head" style="color: #1090ff;">social</p>
+			  			<ul>
+			  				<li><a href="https://www.instagram.com/">instagram</a></li>
+			  				<li><a href="https://www.pinterest.com/">pinterest</a></li>
+			  				<li><a href="https://www.reddit.com/">reddit</a></li>
+			  				<li><a href="https://www.twitter.com/">twitter</a></li>
+			  			</ul>
+		  			</div>
+		  			<div class="part">
+			  			<p class="head" style="color: #fff047;">other</p>
+			  			<ul>
+			  				<li><a href="https://www.unsplash.com">unsplash</a></li>
+			  				<li><a href="https://reddit.com/r/unixporn">unixporn</a></li>
+			  				<li><a href="https://reddit.com/r/learnprogramming">learnprograming</a></li>
+			  				<li><a href="https://youtube.com">youtube</a></li>
+			  				<li><a href="https://codepen.io/dashboard/">codepen</a></li>
+			  			</ul>
+		  			</div>
+	  			</div>
+	  		</div>
   		</div>
   	</div>
-  </div>
-  </div>
   </body>
 </html>
